@@ -42,6 +42,9 @@ function Message({ message }: MessageProps): React.ReactNode {
     "flex flex-col items-start rounded-xl p-2 gap-1",
     "bg-white border-2 border-gallery",
     "dark:bg-cod dark:border-mine",
+    {
+      "opacity-50": message.read,
+    }
   );
 
   const contentClassName = cn(
