@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Messages Chrome Extension",
+  "description": "Chrome extension that shows messages (React.js/Vite)",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "alarms",
+    "storage"
+  ]
+}

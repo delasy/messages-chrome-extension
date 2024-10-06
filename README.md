@@ -1,2 +1,2 @@
-# notifications-chrome-extension
-Chrome extension that shows notifications (React.js/Vite)
+# messages-chrome-extension
+Chrome extension that shows messages (React.js/Vite)
