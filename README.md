@@ -41,9 +41,10 @@ Code within this project follows clean architecture pattern.
 6. `lib/` - utilities/helper functions
 7. `popup/` - popup-related files
 8. `store/` - entity methods used within popup/options
-9. `use-cases/` - entity methods used within service worker
-10. `background.ts` - entry point of service worker
-11. `global.d.ts` - global typings
+9. `tests/` - e2e tests
+10. `use-cases/` - entity methods used within service worker
+11. `background.ts` - entry point of service worker
+12. `global.d.ts` - global typings
 
 ## Project Architecture
 
