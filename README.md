@@ -1,6 +1,9 @@
 # messages-chrome-extension
 Google Chrome extension built using React.js 18 and Vite 5.
 
+The idea of this extension is to download messages from API, store them in storage
+and display whenever popup opens.
+
 ## Quick Start
 
 1. Install and build the project:
