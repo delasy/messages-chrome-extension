@@ -32,7 +32,7 @@ function Messages(): React.ReactNode {
 
   return (
     <div className="h-full relative overflow-y-auto">
-      <div className="flex flex-col gap-1 pb-2">
+      <div className="flex flex-col gap-1 pb-2" data-testid="messages">
         {content}
       </div>
     </div>

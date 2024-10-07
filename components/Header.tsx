@@ -41,7 +41,11 @@ function Header() {
       <h1 className="font-sans text-xl/tight font-medium text-black dark:text-white">
         System Messages
       </h1>
-      {readAllContent}
+      {readAllContent !== null && (
+        <div className="relative" data-testid="read-all">
+          {readAllContent}
+        </div>
+      )}
     </div>
   );
 }

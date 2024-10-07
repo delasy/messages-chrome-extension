@@ -46,7 +46,6 @@ async function createMessagesAlarm() {
 
   if (typeof alarm === "undefined") {
     await chrome.alarms.create(Alarm.Messages, { periodInMinutes: 0.5 });
-    await handleMessagesAlarm();
   }
 }
 

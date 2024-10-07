@@ -44,7 +44,7 @@ function Message({ message }: MessageProps): React.ReactNode {
     "dark:bg-cod dark:border-mine",
     {
       "opacity-50": message.read,
-    }
+    },
   );
 
   const contentClassName = cn(
@@ -57,12 +57,16 @@ function Message({ message }: MessageProps): React.ReactNode {
   );
 
   return (
-    <div className={className}>
+    <div className={className} data-testid="message">
       <div className="flex justify-between w-full">
         <p className="font-sans font-normal text-xs/tight text-gray-400 text-left">
           {message.timestamp.toLocaleString()}
         </p>
-        {readContent}
+        {readContent !== null && (
+          <div className="relative" data-testid="read">
+            {readContent}
+          </div>
+        )}
       </div>
       <p className={contentClassName}>
         {message.content}
